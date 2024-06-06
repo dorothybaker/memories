@@ -93,6 +93,9 @@ function Post({ post }) {
                 onClick={likeMemory}
                 aria-disabled={isLiking}
               />
+              <span className="text-sm uppercase mt-0.5">
+                {isLiking ? "Liking" : "like"}
+              </span>
             </div>
           )}
           {mine && (
